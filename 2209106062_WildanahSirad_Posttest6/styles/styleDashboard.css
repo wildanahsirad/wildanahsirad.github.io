@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.add-btn {
+    background-color: #eebbc3;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #121629;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background-color: #121629;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.history-btn {
+    background-color: #eebbc3;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #b8c1ec;
+    position: relative;
+}
+
+.left-menu {
+    background: #efefef;
+    position: relative;
+    width: 4.5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+
+.left-menu:hover {
+    width: 13rem;
+}
+
+.left-menu ul li a {
+    display: flex;
+}
+
+.left-menu ul {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ul li {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    margin-bottom: 1rem;
+    align-items: center;
+    transition: all .3s linear;
+}
+
+ul li a {
+    padding: 0.5rem;
+    color: #121629;
+    text-decoration: none;
+}
+
+ul li a i {
+    text-decoration: none;
+    color: #121629;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .3s linear;
+    margin-right: 1.2rem;
+}
+
+.sidebar-item i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+#settings {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.left-menu ul li:hover {
+    transform: translateX(.4rem);
+    transition: all .4s linear;
+}
+
+.left-menu ul li:hover .fa-solid,
+.left-menu ul li:hover a {
+    font-weight: bold;
+    color: #b8c1ec;
+}
+
+
+
+
+
+.right-content {
+    width: 100%;
+    height: auto;
+    background-color: #b8c1ec;
+    overflow: hidden;
+}
+
+.dash-nav-icon {
+    display: inline;
+}
+
+.dash-account {
+    display: inline-flex;
+    gap: 8px;
+}
+
+.dash-main {
+    width: auto;
+    margin: 16px;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.leading-btn {
+    text-align: end;
+}
+
+.dash-main table {
+    width: 100%;
+    border: 2px solid #121629;
+    border-collapse: collapse;
+}
+
+.dash-main table thead {
+    background-color: #EFEFEF;
+}
+
+.dash-main table th, td {
+    padding: 8px;
+    border: 1px solid #121629;
+}
+
+.action {
+    text-align: center;
+}
+
+
+@media (max-width: 640px) {
+    nav {
+        padding:  16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-items {
+        display: none
+    }
+
+    #nav-items {
+        display: none;
+        flex-direction: column;
+    }
+
+    #nav-items a{
+        text-align: center;
+    }
+}
